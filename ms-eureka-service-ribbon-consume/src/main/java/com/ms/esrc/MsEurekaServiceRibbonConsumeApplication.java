@@ -13,6 +13,7 @@ public class MsEurekaServiceRibbonConsumeApplication {
         SpringApplication.run(MsEurekaServiceRibbonConsumeApplication.class, args);
     }
 
+    //添加负载均衡注解,这样RestTemplate就集成了ribbon的负载均衡功能
     @Bean
     @LoadBalanced
     public RestTemplate getRestTemplate(){

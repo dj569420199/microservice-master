@@ -16,6 +16,7 @@ public class DemoController {
     @Autowired
     private RestTemplate restTemplate;
 
+    //启动两个ms-eureka-service-provider，在浏览器多次运行http://localhost:8085/getProviderDemoInfo可看到效果
     @RequestMapping("/getProviderDemoInfo")
     public String getProviderDemoInfo(String name) {
         return restTemplate.getForObject("http://ms-eureka-service-provider/getInfo1?name=" + name, String.class);
