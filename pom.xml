@@ -10,6 +10,7 @@
         <module>ms-eureka-service-consume</module>
         <module>ms-eureka-service-provider</module>
         <module>ms-eureka-service-ribbon-consume</module>
+        <module>ms-service-feign</module>
     </modules>
 
     <groupId>com.micro.demo</groupId>

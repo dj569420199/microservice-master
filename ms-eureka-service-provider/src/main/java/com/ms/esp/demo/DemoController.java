@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/provider")
-public class DemoService {
+public class DemoController {
 
     @Value("${server.port}")
     String port;
