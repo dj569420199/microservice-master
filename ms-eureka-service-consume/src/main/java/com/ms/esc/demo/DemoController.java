@@ -22,7 +22,7 @@ public class DemoController {
          * paras：参数
          * resutType：返回值类型
          */
-        String url = "http://localhost:8082/getInfo";
+        String url = "http://localhost:8082/provider/getInfo";
         HttpMethod type = HttpMethod.GET;
         RequestEntity<String> paras = null;
         ResponseEntity<String> responseEntity = restTemplate.exchange(url, type, paras, String.class);
@@ -32,16 +32,9 @@ public class DemoController {
     @RequestMapping("/test2")
     public String getString1() {
         //getForObject 调用无参方法，返回结果为String的方法
-        String url = "http://localhost:8082/getInfo";
+        String url = "http://localhost:8082/provider/getInfo";
         String res = restTemplate.getForObject(url, String.class);
         return res;
     }
 
-    @RequestMapping("/test3")
-    public String getString2() {
-        //getForObject 调用有参方法，路径添加参数。返回结果为String的方法
-        String url = "http://localhost:8082/getString?userId=sn001";
-        String res = restTemplate.getForObject(url, String.class);
-        return res;
-    }
 }
