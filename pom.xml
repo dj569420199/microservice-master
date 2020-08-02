@@ -12,6 +12,7 @@
         <module>ms-eureka-service-ribbon-consume</module>
         <module>ms-service-feign</module>
         <module>ms-config-server</module>
+        <module>ms-config-client</module>
     </modules>
 
     <groupId>com.micro.demo</groupId>
