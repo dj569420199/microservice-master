@@ -4,9 +4,10 @@ package com.micro.demo.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-//使用 @ConfigurationProperties 的方式获取配置
 /**
- * 配合调用 actuator/refresh 方法 再次获取的就是新的值
+ * 使用 @ConfigurationProperties 的方式获取配置<br>
+ * 配合调用 actuator/refresh 接口实现配置自动刷新
+ * http://localhost:8089/actuator/refresh (POST方式，用postman调用)
  */
 @Component
 @ConfigurationProperties(prefix = "data")
