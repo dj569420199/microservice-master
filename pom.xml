@@ -13,6 +13,7 @@
         <module>ms-service-feign</module>
         <module>ms-config-server</module>
         <module>ms-config-client</module>
+        <module>ms-admin-server</module>
     </modules>
 
     <groupId>com.micro.demo</groupId>
